@@ -118,11 +118,6 @@ deser:{
 
 \d .
 
-m:-8!(1;"howdy doody";(1 2;1.1 2.2;(`def;"ghi")))
-
-.d.deser m
-
-/
 .d.deser -8!0b
 .d.deser -8!0x01
 .d.deser -8!10h
@@ -157,3 +152,6 @@ m:-8!(1;"howdy doody";(1 2;1.1 2.2;(`def;"ghi")))
 .d.deser -8!12:34 21:43
 .d.deser -8!12:34:56 21:43:56
 .d.deser -8!12:34:56.123 12:34:56.321
+
+m:-8!(1;"howdy doody";(1 2;1.1 2.2;(`def;"ghi")))
+.d.deser m
